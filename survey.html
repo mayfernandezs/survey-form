@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Encuesta de satisfacción</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    
+    <h1 id="title">Encuesta de satisfacción</h1>
+    <p id="description">Ayúdanos a mejorar rellenando esta encuesta</p>
+    
+    <form action="" method="post" id="survey-form">
+      
+      <fieldset>
+        <label id="name-label" for="name">Nombre:
+          <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+        </label>
+        <label id="email-label" for="email">Email:
+          <input type="email" id="email" name="email" placeholder="Tu email" required />
+        </label>
+        <label id="number-label" for="number">Edad:
+          <input type="number" id="number" name="number" min="14" max="120" placeholder="Tu edad" />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="dropdown">¿A qué clase perteneces?
+        <select id="dropdown">
+          <option>Selecciona una opción</option>
+          <option>Robótica</option>
+          <option>Patinaje</option>
+          <option>Baile</option>
+          <option>Acrobacias</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+         <legend>¿A qué hora vienes a clase?</legend>
+        <label for="11-12">
+          <input type="radio" class="linea" name="horario" id="11-12" value="11-12" checked> 11:00 a 12:00 h
+        </label>
+        <label for="12-13">
+          <input type="radio" class="linea" name="horario" id="12-13" value="12-13"> 12:00 a 13:00 h
+        </label>
+        <label for="17-18">
+          <input type="radio" class="linea" name="horario" id="17-18" value="17-18"> 17:00 a 18:00 h
+        </label>
+        <label for="18-19">
+          <input type="radio" class="linea" name="horario" id="18-19" value="18-19"> 18:00 a 19:00 h
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>¿Qué profes quieres tener?</legend>
+        <label for="Anita">
+          <input type="checkbox" class="linea" id="Anita" name="Anita" value="Anita">Anita</input>
+        </label>
+        <label for="Laura">
+          <input type="checkbox" class="linea" id="Laura" name="Laura" value="Laura">Laura</input>
+        </label>
+        <label for="Carmen">
+          <input type="checkbox" class="linea" id="Carmen" name="Carmen" value="Carmen">Carmen</input>
+        </label>
+        <label for="Paloma">
+          <input type="checkbox" class="linea" id="Paloma" name="Paloma" value="Paloma">Paloma</input>
+        </label>
+        <label for="Sonia">
+          <input type="checkbox" class="linea" id="Sonia" name="Sonia" value="Sonia">Sonia</input>
+        </label>
+        <label for="Maria">
+          <input type="checkbox" class="linea" id="Maria" name="Maria" value="Maria">María</input>
+        </label>
+        <label for="Ines">
+          <input type="checkbox" class="linea" id="Ines" name="Ines" value="Ines">Inés</input>
+        </label>
+        <label for="sugerencias">Sugerencias:
+          <textarea id="sugerencias" name="sugerencias" rows="5" cols="40">
+          </textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" name="submit"></input>
+    </form>
+  </body>
+</html>
